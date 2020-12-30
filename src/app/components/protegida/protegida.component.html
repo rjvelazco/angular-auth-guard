@@ -1,0 +1,12 @@
+<h1>Perfil de Usuaro</h1>
+<hr>
+
+<!-- El observable lo pasamos por el pipe de 'async' y lo asignamos a la variable profile-->
+<pre *ngIf="auth.userProfile$ | async as profile">
+
+    <!-- El profile lo pasamos por el pipe json para poderlo visualizar -->
+    <code>{{ profile | json }}</code>
+
+    <!-- sub: "nombre del sistema de cuenta que usa el usuario | identificador unico"  
+        - Es el id unico, se puede utilizar para identificar al usuario--> 
+</pre>
